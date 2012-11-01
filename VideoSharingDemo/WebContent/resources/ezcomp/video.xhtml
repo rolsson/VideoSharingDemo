@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:cc="http://java.sun.com/jsf/composite"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <!-- INTERFACE -->
+    <cc:interface>
+        <cc:attribute name="src" required="true"/>
+        <cc:attribute name="controls" required="false"/>
+        <cc:attribute name="width" required="false"/>
+        <cc:attribute name="height" required="false"/>
+    </cc:interface>
+
+    <!-- IMPLEMENTATION -->
+    <cc:implementation>
+        <video src="#{cc.attrs.src}" controls="#{cc.attrs.controls}"
+               width="#{cc.attrs.width}" height="#{cc.attrs.height}"></video>
+        <br/>
+    </cc:implementation>
+</html>
